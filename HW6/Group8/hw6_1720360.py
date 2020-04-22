@@ -18,7 +18,7 @@ else:
     
 # 4.读取一个字符串，要求使用正则表达式来读取其中的电话号码，电话号码的格式假定为：
 # （xxx） xxx - xxxx或xxx - xxx - xxxx。
-print(" ".join([s for r in re.findall(r"(\(+\d+\)+\d+\-\d+\d+)|(\d+\-\d+\-\d+)","Phone number is (0215)123-1234 , 056-234-4567 , 074-457-9878 , (020)475-7542")
+print(" ".join([s for r in re.findall(r"(\(+\d+\)+\d+\-\d+\d+)|(\d+\-\d+\-\d+)","Phone number is (0215)689-3240, 131-222-4444 , 021-427-9228 , (022)111-0000")
                 for s in r if s!= '']))
 
 # 5.利用正则表达式从下列不同的字符串中获取指定格式的日期。日期的格式为yyyy - mm - dd。
