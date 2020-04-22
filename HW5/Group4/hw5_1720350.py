@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 '''1. 某比赛需要获取你的个人信息，设计一个程序，
 
 运行时分别提醒用户输入 姓名、性别、年龄 ，输入完了，请将数据存储为一个字典，
@@ -29,11 +30,15 @@
 
 
 #1
+=======
+#题目 1
+>>>>>>> dev
 name = input("请输入姓名：")
 gender = input("请输入性别：")
 age = input("请输入年龄：")
 dic = {"姓名":name, "性别":gender, "年龄":age}
 
+<<<<<<< HEAD
 #2
 print("我的名字",name,"，今年",age,"岁，性别",gender,"，喜欢敲代码")
 
@@ -61,3 +66,35 @@ print(li[2::3])
 #7
 s='python java php'
 print(s[7:11])
+=======
+#题目 2
+print("我的名字{}，今年{}岁，性别{}，喜欢敲代码\n".format(dic["姓名"], dic["性别"], dic[ "年龄"]))
+
+#题目3
+height = input("请输入身高：")
+mobil_phone = input("请输入联系方式：")
+dic["身高"] = height
+dic["联系方式"] = mobil_phone
+
+#题目 4
+for key in dic:
+    print(key,"：",dic[key],sep="")
+
+#题目 5
+list = [11, 22, 33, 22, 22, 44, 55, 77, 88, 99, 11]
+__ = list[:]
+for _ in __:
+    if list.count(_) != 1:
+        list.remove(_)
+print(list)
+
+#题目 6
+list=[1,2,3,4,5,6,7,8,9]
+print(list[2::3])
+
+#题目 7
+s = 'python java php'
+print(s[7:11])
+
+
+>>>>>>> dev
