@@ -44,7 +44,7 @@ class Monster(Role): #怪兽类，继承自Role
 
 #英雄类
 class Hero(Role):
-    def __init__(self,name,race,live=50): #初始化时可以指定种族,血量默认100
+    def __init__(self,name,race,live=50): #初始化时可以指定种族,血量默认50
         super(Hero,self).__init__(name)
         self.cur_live=live
         self.race=race
