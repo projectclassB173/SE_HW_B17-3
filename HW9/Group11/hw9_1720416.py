@@ -16,15 +16,15 @@ class Role:
         return R_attack
     # 升级
     def upgrade(role):
-        role.life = role.life + 10                # 当前血量
-        role.level = role.level + 1             # 等级
+        role.life = role.life + 10             # 英雄升级时当前血量加10
+        role.level = role.level + 1            # 等级加1
         print("—{0}升级，当前等级{1}，当前血量{2}！".format(role.name, role.level, role.life)) # 访问类变量
     # 防御
     def defense(role, R_attack):
-        X_flexibility = n.random()            # 产生一个随机数，如果小于灵活性则躲避，大于灵活性则命中
+        X_flexibility = n.random()             # 产生一个随机数，如果小于灵活性则躲避，大于灵活性则命中
         if role.flexibility < X_flexibility:
             role.life = role.life - R_attack
-            if role.life < 0:
+            if role.life < 0:                  # 英雄血量低于0时，显示为0
                 role.life = 0
             print("——{0}受到{1}点伤害，当前血量{2}".format(role.name, R_attack, role.life))
         else:
@@ -41,7 +41,7 @@ class Spirit(Role):
     # 属性
     def __init__(role, name):
         super(Spirit, role).__init__(name)
-        role.flexibility = 0.6                 # 精灵闪避率为60%
+        role.flexibility = 0.8                 # 精灵闪避率为80%
 
 #小怪兽
 class Monster:
@@ -59,7 +59,7 @@ class Monster:
     # 防御
     def defense(monster, R_attack):
         monster.life = monster.life - R_attack
-        if monster.life < 0:
+        if monster.life < 0:                   # 小怪兽血量低于0时，显示为0
             monster.life = 0
         print("——{0}受到{1}点伤害，当前血量 {2}".format(monster.name, R_attack, monster.life))
 
@@ -71,14 +71,16 @@ class Big_Monster(Monster):
         super(Big_Monster, monster_boss).__init__(name, level)
         monster_boss.protect = monster_boss.maxlife * 0.6  # 设置护盾值为大怪兽血量的60%
     # 防御
-    def defense(monster_boss, R_attack):       # 受到攻击优先扣除护盾
+    def defense(monster_boss, R_attack):       # 大怪兽受到攻击时先扣除护盾，护盾为0时扣除血量
         if monster_boss.protect > 0:
             monster_boss.protect = monster_boss.protect - R_attack
-            if monster_boss.protect < 0:
+            if monster_boss.protect < 0:       # 大怪兽护盾低于0时，显示为0
                 monster_boss.protect = 0
             print("——{0}受到{1}点伤害，当前护盾值{2}，血量{3}".format(monster_boss.name, R_attack, monster_boss.protect, monster_boss.life))
         else:
             monster_boss.life = monster_boss.life - R_attack
+            if monster_boss.life < 0:          # 大怪兽血量低于0时，显示为0
+                monster_boss.life = 0
             print("——{0}受到{1}点伤害，当前护盾值{2}，血量{3}".format(monster_boss.name, R_attack, monster_boss.protect, monster_boss.life))
 
 # 主函数
@@ -101,9 +103,9 @@ def main():
     while True:
         print("第{0}回合：".format(n))
         MonsterNum[0].defense(role.attack())   # 依照次序依次攻击monster1, monster2, monster_boss
-        if MonsterNum[0].life <= 0:            # 有怪兽阵亡时英雄会升级
+        if MonsterNum[0].life <= 0:
             print("—{0}阵亡了！".format(MonsterNum[0].name))
-            role.upgrade()
+            role.upgrade()                     # 当击败怪兽时英雄会升级
             del MonsterNum[0]
         if len(MonsterNum) == 0:               # 没有怪兽时英雄Win
             print("==英雄Win！==")
@@ -120,6 +122,8 @@ if __name__ == '__main__':
     print("——打怪兽小游戏开始！——")
     main()
     print("——游戏结束！——")
+
+
 
 
 
@@ -262,7 +266,7 @@ if __name__ == '__main__':
 ——精灵躲避了本次攻击！
 第16回合：
 —精灵发动攻击
-——怪兽Boss受到25点伤害，当前护盾值0，血量-2
+——怪兽Boss受到25点伤害，当前护盾值0，血量0
 —怪兽Boss阵亡了！
 —精灵升级，当前等级4，当前血量28！
 ==英雄Win！==
