@@ -24,7 +24,7 @@ class HeroHuman(Hero):
         hero.avd = 0.6        # 灵活性数值
     #防御函数
     def defense(hero, atk):
-        is_hurt = k.random()#产生随机数，如果小于0.4则躲避，大于则命中
+        is_hurt = k.random()#产生随机数，如果小于0.5则躲避，大于则命中
         if hero.avd < is_hurt:
             hero.current_hp -= atk
             print("——人类受到 {}点伤害,当前血量 {}".format(atk, hero.current_hp))
