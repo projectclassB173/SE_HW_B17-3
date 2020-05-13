@@ -38,7 +38,7 @@ class HM():  # 战斗者类
 
     def __str__(self):  # 内置魔法方法,输出对象时输出
 
-        return f"----{self.name}----       HP:{self.thp} "
+        return f"----{self.name}----       HP:{self.thp}/{self.maxhp} "
 
 
 class Monster(HM):  # 怪兽类 ,继承战斗者类
