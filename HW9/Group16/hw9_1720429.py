@@ -74,7 +74,7 @@ class Monster(Person):
 
     def defence(self, hurt):
         self.hp -= hurt
-        print('{}受到了{}点伤害'.format(self.name, hurt))
+        print('{}受到了{}点攻击'.format(self.name, hurt))
 
 
 class Boss(Person):
@@ -97,11 +97,11 @@ class Boss(Person):
                 print("{}受到{}点攻击,当前护盾剩余{}".format(self.name, hurt, self.shield))
             else:
                 self.hp -= hurt
-                print("{}受到{}点伤害,当前护盾剩余{}".format(self.name, hurt, self.shield))
+                print("{}受到{}点攻击,当前护盾剩余{}".format(self.name, hurt, self.shield))
 
 
 def main():
-    hero = Hero("haha", 100, 1, '人类')
+    hero = Hero("haha", 100, 1, 'human')
     m1 = Monster("蛙人")
     m2 = Monster("鱼人", 80, 2)
     boss = Boss("萨格尔王", 100)
