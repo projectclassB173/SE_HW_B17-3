@@ -25,129 +25,165 @@
 ## 运行结果
 
 ```
-python3.7 game.py
 ******************** fighting of round 1 ********************
-Monster受到8点伤害
+Monster受到10点伤害
+你受到0点攻击
 Name:Asahi 	 HP: 100 	 Level:  1
-Name:Monster1 	 HP:  52 	 Level:  1
+Name:Monster1 	 HP:  50 	 Level:  1
 ******************** fighting of round 2 ********************
 Monster受到7点伤害
-Name:Asahi 	 HP: 100 	 Level:  1
-Name:Monster1 	 HP:  45 	 Level:  1
+你受到6点攻击
+Name:Asahi 	 HP:  94 	 Level:  1
+Name:Monster1 	 HP:  43 	 Level:  1
 ******************** fighting of round 3 ********************
-Monster受到5点伤害
-Name:Asahi 	 HP: 100 	 Level:  1
-Name:Monster1 	 HP:  40 	 Level:  1
+Monster受到2点伤害
+你躲避了攻击！
+Name:Asahi 	 HP:  94 	 Level:  1
+Name:Monster1 	 HP:  41 	 Level:  1
 ******************** fighting of round 4 ********************
-Monster受到6点伤害
-Name:Asahi 	 HP: 100 	 Level:  1
-Name:Monster1 	 HP:  34 	 Level:  1
+Monster受到8点伤害
+你躲避了攻击！
+Name:Asahi 	 HP:  94 	 Level:  1
+Name:Monster1 	 HP:  33 	 Level:  1
 ******************** fighting of round 5 ********************
-Monster受到3点伤害
-Name:Asahi 	 HP: 100 	 Level:  1
-Name:Monster1 	 HP:  31 	 Level:  1
+Monster受到4点伤害
+你受到6点攻击
+Name:Asahi 	 HP:  88 	 Level:  1
+Name:Monster1 	 HP:  29 	 Level:  1
 ******************** fighting of round 6 ********************
 Monster受到1点伤害
-Name:Asahi 	 HP: 100 	 Level:  1
-Name:Monster1 	 HP:  30 	 Level:  1
+你躲避了攻击！
+Name:Asahi 	 HP:  88 	 Level:  1
+Name:Monster1 	 HP:  28 	 Level:  1
 ******************** fighting of round 7 ********************
-Monster受到7点伤害
-Name:Asahi 	 HP: 100 	 Level:  1
+Monster受到5点伤害
+你受到8点攻击
+Name:Asahi 	 HP:  80 	 Level:  1
 Name:Monster1 	 HP:  23 	 Level:  1
 ******************** fighting of round 8 ********************
-Monster受到2点伤害
-Name:Asahi 	 HP: 100 	 Level:  1
-Name:Monster1 	 HP:  21 	 Level:  1
+Monster受到3点伤害
+你受到5点攻击
+Name:Asahi 	 HP:  75 	 Level:  1
+Name:Monster1 	 HP:  20 	 Level:  1
 ******************** fighting of round 9 ********************
-Monster受到10点伤害
-Name:Asahi 	 HP: 100 	 Level:  1
-Name:Monster1 	 HP:  11 	 Level:  1
+Monster受到1点伤害
+你受到6点攻击
+Name:Asahi 	 HP:  69 	 Level:  1
+Name:Monster1 	 HP:  19 	 Level:  1
 ******************** fighting of round 10 ********************
-Monster受到3点伤害
-Name:Asahi 	 HP: 100 	 Level:  1
-Name:Monster1 	 HP:   8 	 Level:  1
+Monster受到2点伤害
+你受到7点攻击
+Name:Asahi 	 HP:  62 	 Level:  1
+Name:Monster1 	 HP:  17 	 Level:  1
 ******************** fighting of round 11 ********************
-Monster受到3点伤害
-Name:Asahi 	 HP: 100 	 Level:  1
-Name:Monster1 	 HP:   5 	 Level:  1
+Monster受到7点伤害
+你受到7点攻击
+Name:Asahi 	 HP:  55 	 Level:  1
+Name:Monster1 	 HP:  10 	 Level:  1
 ******************** fighting of round 12 ********************
-Monster受到6点伤害
-Name:Asahi 	 HP: 100 	 Level:  1
-Name:Monster1 	 HP:  -1 	 Level:  1
-你升级到了2级
+Monster受到9点伤害
+你受到8点攻击
+Name:Asahi 	 HP:  47 	 Level:  1
+Name:Monster1 	 HP:   1 	 Level:  1
 ******************** fighting of round 13 ********************
-Monster受到0点伤害
-Name:Asahi 	 HP: 110 	 Level:  2
-Name:Monster2 	 HP:  60 	 Level:  1
+Monster受到4点伤害
+Name:Asahi 	 HP:  47 	 Level:  1
+Name:Monster1 	 HP:  -3 	 Level:  1
+你升级到了2级
 ******************** fighting of round 14 ********************
-Monster受到5点伤害
-Name:Asahi 	 HP: 110 	 Level:  2
-Name:Monster2 	 HP:  55 	 Level:  1
-******************** fighting of round 15 ********************
-Monster受到0点伤害
-Name:Asahi 	 HP: 110 	 Level:  2
-Name:Monster2 	 HP:  55 	 Level:  1
-******************** fighting of round 16 ********************
-Monster受到8点伤害
-Name:Asahi 	 HP: 110 	 Level:  2
-Name:Monster2 	 HP:  47 	 Level:  1
-******************** fighting of round 17 ********************
-Monster受到14点伤害
-Name:Asahi 	 HP: 110 	 Level:  2
-Name:Monster2 	 HP:  33 	 Level:  1
-******************** fighting of round 18 ********************
 Monster受到15点伤害
+你躲避了攻击！
 Name:Asahi 	 HP: 110 	 Level:  2
-Name:Monster2 	 HP:  18 	 Level:  1
+Name:Monster2 	 HP:  45 	 Level:  1
+******************** fighting of round 15 ********************
+Monster受到16点伤害
+你躲避了攻击！
+Name:Asahi 	 HP: 110 	 Level:  2
+Name:Monster2 	 HP:  29 	 Level:  1
+******************** fighting of round 16 ********************
+Monster受到2点伤害
+你受到0点攻击
+Name:Asahi 	 HP: 110 	 Level:  2
+Name:Monster2 	 HP:  27 	 Level:  1
+******************** fighting of round 17 ********************
+Monster受到3点伤害
+你躲避了攻击！
+Name:Asahi 	 HP: 110 	 Level:  2
+Name:Monster2 	 HP:  24 	 Level:  1
+******************** fighting of round 18 ********************
+Monster受到14点伤害
+你躲避了攻击！
+Name:Asahi 	 HP: 110 	 Level:  2
+Name:Monster2 	 HP:  10 	 Level:  1
 ******************** fighting of round 19 ********************
-Monster受到20点伤害
-Name:Asahi 	 HP: 110 	 Level:  2
-Name:Monster2 	 HP:  -2 	 Level:  1
-你升级到了3级
+Monster受到6点伤害
+你受到5点攻击
+Name:Asahi 	 HP: 105 	 Level:  2
+Name:Monster2 	 HP:   4 	 Level:  1
 ******************** fighting of round 20 ********************
-Boss受到2点伤害
-你受到14点攻击
-Name:Asahi 	 HP: 106 	 Level:  3
-Name:Boss 	 HP:  80 	 Level:  3
+Monster受到0点伤害
+你受到10点攻击
+Name:Asahi 	 HP:  95 	 Level:  2
+Name:Monster2 	 HP:   4 	 Level:  1
 ******************** fighting of round 21 ********************
-Boss受到8点伤害
-你受到12点攻击
-Name:Asahi 	 HP:  94 	 Level:  3
-Name:Boss 	 HP:  80 	 Level:  3
+Monster受到10点伤害
+Name:Asahi 	 HP:  95 	 Level:  2
+Name:Monster2 	 HP:  -6 	 Level:  1
+你升级到了3级
 ******************** fighting of round 22 ********************
-Boss受到2点伤害
-你受到27点攻击
-Name:Asahi 	 HP:  67 	 Level:  3
+Boss受到7点伤害
+你躲避了攻击！
+Name:Asahi 	 HP: 120 	 Level:  3
 Name:Boss 	 HP:  80 	 Level:  3
 ******************** fighting of round 23 ********************
-Boss受到17点伤害
-你躲避了攻击！
-Name:Asahi 	 HP:  67 	 Level:  3
+Boss受到5点伤害
+你受到30点攻击
+Name:Asahi 	 HP:  90 	 Level:  3
 Name:Boss 	 HP:  80 	 Level:  3
 ******************** fighting of round 24 ********************
-Boss受到25点伤害
-你受到11点攻击
-Name:Asahi 	 HP:  56 	 Level:  3
-Name:Boss 	 HP:  55 	 Level:  3
-******************** fighting of round 25 ********************
-Boss受到19点伤害
-你躲避了攻击！
-Name:Asahi 	 HP:  56 	 Level:  3
-Name:Boss 	 HP:  36 	 Level:  3
-******************** fighting of round 26 ********************
-Boss受到7点伤害
+Boss受到14点伤害
 你受到22点攻击
-Name:Asahi 	 HP:  34 	 Level:  3
-Name:Boss 	 HP:  29 	 Level:  3
+Name:Asahi 	 HP:  68 	 Level:  3
+Name:Boss 	 HP:  80 	 Level:  3
+******************** fighting of round 25 ********************
+Boss受到7点伤害
+你受到5点攻击
+Name:Asahi 	 HP:  63 	 Level:  3
+Name:Boss 	 HP:  73 	 Level:  3
+******************** fighting of round 26 ********************
+Boss受到15点伤害
+你受到8点攻击
+Name:Asahi 	 HP:  55 	 Level:  3
+Name:Boss 	 HP:  58 	 Level:  3
 ******************** fighting of round 27 ********************
-Boss受到17点伤害
-你受到21点攻击
-Name:Asahi 	 HP:  13 	 Level:  3
-Name:Boss 	 HP:  12 	 Level:  3
+Boss受到5点伤害
+你受到0点攻击
+Name:Asahi 	 HP:  55 	 Level:  3
+Name:Boss 	 HP:  53 	 Level:  3
 ******************** fighting of round 28 ********************
-Boss受到23点伤害
-Name:Asahi 	 HP:  13 	 Level:  3
-Name:Boss 	 HP: -11 	 Level:  3
+Boss受到2点伤害
+你受到21点攻击
+Name:Asahi 	 HP:  34 	 Level:  3
+Name:Boss 	 HP:  51 	 Level:  3
+******************** fighting of round 29 ********************
+Boss受到4点伤害
+你受到2点攻击
+Name:Asahi 	 HP:  32 	 Level:  3
+Name:Boss 	 HP:  47 	 Level:  3
+******************** fighting of round 30 ********************
+Boss受到27点伤害
+你躲避了攻击！
+Name:Asahi 	 HP:  32 	 Level:  3
+Name:Boss 	 HP:  20 	 Level:  3
+******************** fighting of round 31 ********************
+Boss受到8点伤害
+你躲避了攻击！
+Name:Asahi 	 HP:  32 	 Level:  3
+Name:Boss 	 HP:  12 	 Level:  3
+******************** fighting of round 32 ********************
+Boss受到21点伤害
+Name:Asahi 	 HP:  32 	 Level:  3
+Name:Boss 	 HP:  -9 	 Level:  3
 你升级到了4级
 You win,Asahi
 ```

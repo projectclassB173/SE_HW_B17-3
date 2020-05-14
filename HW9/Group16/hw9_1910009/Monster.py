@@ -7,7 +7,8 @@ class Monster(Role):
         super(Monster, self).__init__(name=name, hp=hp, level=1)
 
     def attack(self, hero):
-        hurt = random.randint(0, self.level*10)
+        hurt = random.randint(0, 10)
+        hero.defence(hurt)
 
     def defence(self, hurt):
         self._hp -= hurt
