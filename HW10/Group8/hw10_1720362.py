@@ -18,7 +18,7 @@ c.execute('''CREATE TABLE USER
        NAME           TEXT    NOT NULL,
        PHONE         CHAR(15)    NOT NULL,
        COMPANY       CHAR(50)   NOT NULL,
-       ADDRESS        CHAR(50)      NOT NULL);''')      # test.db 中创建 USER 表
+       ADDRESS        CHAR(50)      NOT NULL);''')      # testhw10.db 中创建 USER 表
 print("成功创建表")
 # 以下代码显示如何在上面创建的 USER 表中创建详细信息
 c.execute("INSERT INTO USER (ID,NAME,PHONE,COMPANY,ADDRESS) \
@@ -45,7 +45,7 @@ print("操作成功完成")
 c.execute("DELETE from USER where ID=2;")
 conn.commit()
 print("Total number of rows deleted :", conn.total_changes)
-cursor = conn.execute("SELECT ID,NAME,PHONE,COMPANY,ADDRESS  from USER")
+cursor = conn.execute("SELECT ID,NAME,PHONE,COMPANY,ADDRESS  from USER where NAME ='人五'")
 for row in cursor:
    print("ID = ", row[0])
    print("NAME = ", row[1])
@@ -61,22 +61,11 @@ C:\Users\Administrator\PycharmProjects\untitled\venv\Scripts\python.exe D:/GG/hw
 成功打开数据库
 成功创建表
 记录创建成功
-查询数据库中NAME =  KK
-PHONE =  13585890317
-COMPANY =  天下无敌有限公司
-ADDRESS =  上海宝山
-查询数据库中NAME =  XX
-PHONE =  18217179680
-COMPANY =  人生无限有限公司
-ADDRESS =  上海浦东
-查询数据库中NAME =  人五
+ID =  人五
+NAME =  人五
 PHONE =  12345678901
 COMPANY =  W公司
 ADDRESS =  成都
-查询数据库中NAME =  微微
-PHONE =  13671704767
-COMPANY =  R公司
-ADDRESS =  新疆
 操作成功完成
 Total number of rows deleted : 5
 ID =  1
