@@ -6,51 +6,42 @@
 ##按姓名查询联系人详细信息；
 ##删除联系人；
 import sqlite3
-class ConnDB:
-    def __init__(self):        # 初始化数据库连接，初始化游标
-        self.conn = sqlite3.connect("hw10_1720359.db")
-        self.c = self.conn.cursor()
-
-    def close(self):   # 关闭数据库操作
-        self.c.close()
-        self.conn.close()
-    def create_database():
-        conn = sqlite3.connect('hw10_1720359.db')
-        print("Opened database successfully");
-        conn.execute('''CREATE TABLE CONTACTS
-        (ID INTEGER PRIMARY KEY AUTOINCREMENT,
-        NAME TEXT NOT NULL,
-        TELPHONE TEXT NOT NULL,
-        COMPANY TEXT NOT NULL,
-        ADRESS TEXT NOT NULL);''')
-        print("Table contacts created successfully");
-        conn.close()
-    def add_con(name,tel,com,ads):
-        conn = sqlite3.connect('hw10_1720359.db')
-        print("Opened database successfully")
-        conn.execute("INSERT INTO CONTACTS (NAME,TELPHONE,COMPANY,ADRESS) VALUES ('"+name+"', '"+tel+"', '"+com+"', '"+ads+"')")
-        conn.commit()
-        num1=conn.total_changes
-        print("{0} rows changed in table contacts.".format(num1))
-        print("Insert operation successfully.")
-        conn.close()
-    def search_byname(name):
-        conn = sqlite3.connect('hw10_1720359.db')
-        cursor1 = conn.execute("SELECT ID,NAME,TELPHONE,COMPANY,ADRESS from CONTACTS where NAME ='"+name+"'")
-        for row in cursor1:
-            print("ID = ", row[0],end=' ')
-            print("NAME = ", row[1],end=' ')
-            print("TELPHONE = ", row[2],end=' ')
-            print("COMPANY = ", row[3],end=' ')
-            print("ADRESS = ", row[4])
-            print("Operation done successfully")
-
-    def del_byname(name):
-        conn = sqlite3.connect('hw10_1720359.db')
-        cursor1 = conn.execute("delete from CONTACTS where NAME ='"+name+"'")
-        num1=conn.total_changes
-        print("{0} rows changed in table CONTACTS.".format(num1))
-        print("Contact "+name+" delete successfully")
+def create_database():
+    conn = sqlite3.connect('hw10_1720359.db')
+    print("Opened database successfully");
+    conn.execute('''CREATE TABLE CONTACTS
+    (ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    NAME TEXT NOT NULL,
+    TELPHONE TEXT NOT NULL,
+    COMPANY TEXT NOT NULL,
+    ADRESS TEXT NOT NULL);''')
+    print("Table contacts created successfully");
+    conn.close()
+def add_con(name,tel,com,ads):
+    conn = sqlite3.connect('hw10_1720359.db')
+    print("Opened database successfully")
+    conn.execute("INSERT INTO CONTACTS (NAME,TELPHONE,COMPANY,ADRESS) VALUES ('"+name+"', '"+tel+"', '"+com+"', '"+ads+"')")
+    conn.commit()
+    num1=conn.total_changes
+    print("{0} rows changed in table contacts.".format(num1))
+    print("Insert operation successfully.")
+    conn.close()
+def search_byname(name):
+    conn = sqlite3.connect('hw10_1720359.db')
+    cursor1 = conn.execute("SELECT ID,NAME,TELPHONE,COMPANY,ADRESS from CONTACTS where NAME ='"+name+"'")
+    for row in cursor1:
+        print("ID = ", row[0],end=' ')
+        print("NAME = ", row[1],end=' ')
+        print("TELPHONE = ", row[2],end=' ')
+        print("COMPANY = ", row[3],end=' ')
+        print("ADRESS = ", row[4])
+print("Operation done successfully")
+def del_byname(name):
+    conn = sqlite3.connect('hw10_1720359.db')
+    cursor1 = conn.execute("delete from CONTACTS where NAME ='"+name+"'")
+    num1=conn.total_changes
+    print("{0} rows changed in table CONTACTS.".format(num1))
+    print("Contact "+name+" delete successfully")
 
 
 
