@@ -1,6 +1,7 @@
+import sqlite3
 class ConnDB:
     def __init__(self):    
-        self.conn = sqlite.connect("address_list.db")
+        self.conn = sqlite3.connect("address_list.db")
         self.c = self.conn.cursor()
 
     def close(self): 
@@ -17,7 +18,7 @@ class ConnDB:
                 address TEXT);''')
             self.conn.commit()
             print("t_adb was successfully created!\n")
-        except sqlite.OperationalError as reason:
+        except sqlite3.OperationalError as reason:
             print("WARNING: t_adb could not be created because " + str(reason) + "\n")
 
     @staticmethod
@@ -39,11 +40,11 @@ class ConnDB:
                            (init[0], init[1], init[2], init[3], init[4]))
             self.conn.commit()
             print("INFO: Affected Rows 1\n")
-        except sqlite.IntegrityError as reason:
+        except sqlite3.IntegrityError as reason:
             print("WARNING: " + str(reason) + "\n")
         except TypeError as reason:
             print("WARNING: " + str(reason) + "\n")
-        except sqlite.OperationalError as reason:
+        except sqlite3.OperationalError as reason:
             print("WARNING: " + str(reason))
             print("请先执行创建表操作...\n")
 
@@ -61,7 +62,7 @@ class ConnDB:
                           .format(each[0], each[1], each[2], each[3], each[4]))
             else:
                 print("INFO: {} is not in t_adb\n".format(name))
-        except sqlite.OperationalError as reason:
+        except sqlite3.OperationalError as reason:
             print("WARNING: " + str(reason))
             print("请先执行创建表操作...\n")
 
@@ -70,7 +71,7 @@ class ConnDB:
             self.c.execute("DELETE FROM t_adb WHERE name='{}'".format(name))
             self.conn.commit()
             print("INFO: Affected Rows 1\n")
-        except sqlite.OperationalError as reason:
+        except sqlite3.OperationalError as reason:
             print("WARNING: " + str(reason))
             print("请先执行创建表操作...\n")
 
