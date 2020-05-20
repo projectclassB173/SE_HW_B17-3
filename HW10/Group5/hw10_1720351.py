@@ -46,7 +46,7 @@ class ConnDB:
         except:
             pass
 
-    def __add_contacts(self, init):  # 传入之前用户输入的内容
+    def __add_contacts(self, init): 
         try:
             self.sql.execute("INSERT INTO list(id, name, tel, company, address) VALUES(?,?,?,?,?)", (init[0], init[1], init[2], init[3], init[4]))
             self.conn.commit()
