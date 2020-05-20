@@ -35,6 +35,7 @@ def search_byname(name):
         print("TELPHONE = ", row[2],end=' ')
         print("COMPANY = ", row[3],end=' ')
         print("ADRESS = ", row[4])
+        conn.close()
 print("Operation done successfully")
 def del_byname(name):
     conn = sqlite3.connect('hw10_1720359.db')
@@ -42,6 +43,7 @@ def del_byname(name):
     num1=conn.total_changes
     print("{0} rows changed in table CONTACTS.".format(num1))
     print("Contact "+name+" delete successfully")
+    conn.close()
 
 
 
