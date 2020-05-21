@@ -14,7 +14,9 @@ print("成功打开practice数据库")
 conn.execute('CREATE TABLE AddressBook(NAME PRIMARY KEY NOT NULL,TELEPHONE CHAR NOT NULL,COMPANY CHAR NOT NULL,ADDRESS CHAR NOT NULL);')
 print("成功创建AddressBook表")
 
-m = int(input("请选择需要使用的功能：\n1.新增联系人\n2.按姓名查询联系人详细信息\n3.删除联系人\n"))
+m = int(input("1.新增联系人\n
+    2.按姓名查询联系人详细信息\n
+    3.删除联系人\n"))
 if m==1:
     conn = sqlite3.connect('D:\\课程\\大三下\\项目实战\\本地数据库\\practice.db')
     name = input("请输入联系人姓名：\n")
